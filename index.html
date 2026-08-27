@@ -1,1368 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayali & Pranav | Wedding</title>
 
-<title>Seqrite Demo Website - Home</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#f5f7fa;
-color:#333;
-}
-
-a{
-text-decoration:none;
-}
-
-header{
-
-background:white;
-box-shadow:0 2px 15px rgba(0,0,0,.08);
-
-position:sticky;
-top:0;
-z-index:1000;
-
-}
-
-.container{
-
-width:90%;
-max-width:1300px;
-margin:auto;
-
-}
-
-.navbar{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:18px 0;
-
-}
-
-.logo{
-
-display:flex;
-align-items:center;
-
-}
-
-.logo img{
-
-width:85px;
-margin-right:15px;
-
-}
-
-.logo h1{
-
-font-size:30px;
-color:#D71920;
-
-}
-
-.logo span{
-
-display:block;
-font-size:14px;
-color:#666;
-
-}
-
-nav ul{
-
-display:flex;
-list-style:none;
-
-}
-
-nav li{
-
-margin-left:35px;
-
-}
-
-nav a{
-
-color:#333;
-font-weight:500;
-transition:.3s;
-
-}
-
-nav a:hover{
-
-color:#D71920;
-
-}
-
-.hero{
-
-background:linear-gradient(135deg,#ffffff,#edf3ff);
-
-padding:70px 0;
-
-}
-
-.hero-content{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-
-}
-
-.hero-left{
-
-width:50%;
-
-}
-
-.hero-left h2{
-
-font-size:48px;
-color:#D71920;
-margin-bottom:20px;
-
-}
-
-.hero-left p{
-
-font-size:18px;
-line-height:1.8;
-margin-bottom:30px;
-
-}
-
-.btn{
-
-display:inline-block;
-
-background:#D71920;
-color:white;
-
-padding:15px 35px;
-
-border-radius:40px;
-
-font-weight:bold;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-
-background:#b80f17;
-
-}
-
-.hero-right{
-
-width:45%;
-
-}
-
-.hero-right img{
-
-width:100%;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,.15);
-
-}
-
-.section{
-
-padding:80px 0;
-
-}
-
-.section-title{
-
-text-align:center;
-font-size:38px;
-margin-bottom:20px;
-color:#D71920;
-
-}
-
-.section-subtitle{
-
-text-align:center;
-max-width:850px;
-margin:auto;
-font-size:18px;
-line-height:1.8;
-color:#555;
-
-}
-
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-margin-top:60px;
-
-}
-
-.card{
-
-background:white;
-
-border-radius:15px;
-
-overflow:hidden;
-
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.card img{
-
-width:100%;
-height:220px;
-object-fit:cover;
-
-}
-
-.card h3{
-
-padding:20px;
-color:#D71920;
-
-}
-
-.card p{
-
-padding:0 20px 25px;
-line-height:1.7;
-
-}
-
-.about{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-flex-wrap:wrap;
-
-gap:50px;
-
-}
-
-.about img{
-
-width:45%;
-border-radius:15px;
-
-}
-
-.about-content{
-
-width:48%;
-
-}
-
-.about-content h2{
-
-color:#D71920;
-font-size:38px;
-margin-bottom:20px;
-
-}
-
-.about-content p{
-
-line-height:1.9;
-margin-bottom:20px;
-
-}
-
-@media(max-width:900px){
-
-.hero-left,
-.hero-right,
-.about img,
-.about-content{
-
-width:100%;
-
-}
-
-.hero-content{
-
-gap:40px;
-
-}
-
-nav{
-
-display:none;
-
-}
-
-.hero-left h2{
-
-font-size:36px;
-
-}
-
-}
-
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>Sayali ❤️ Pranav</h2>
 
-<div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="navbar">
 
-<div class="logo">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
 
-<img src="https://techbagfrontend.s3-ap-south-1.amazonaws.com/logos/7p1RWhvgggkD1oiwn4DHUe.png"
-     alt="Seqrite Logo"
-     style="width:48px; height:54px;">
+        <div class="hero-content">
 
+            <p>We are getting married</p>
 
-<div>
+            <h1>Sayali & Pranav</h1>
 
-<h1>Seqrite Demo Website</h1>
+            <h3>Save the Date</h3>
 
-<span>Cybersecurity | Data Privacy | Enterprise Protection</span>
+            <p class="date">
+                20 December 2026
+            </p>
 
-</div>
+            <a href="#events" class="button">
+                View Wedding Details
+            </a>
 
-</div>
+        </div>
 
-<nav>
+    </section>
 
-<ul>
 
-<li><a href="index.html">Home</a></li>
+    <!-- Our Story -->
+    <section id="story" class="section">
 
-</ul>
+        <h2>Our Story ❤️</h2>
 
-</nav>
+        <p>
+            Two hearts, two lives and one beautiful journey.
 
-</div>
+            We are excited to begin this new chapter together
+            and would love to celebrate our special day with
+            our family and friends.
+        </p>
 
-</div>
+    </section>
 
-</header>
 
-<section class="hero">
+    <!-- Wedding Events -->
+    <section id="events" class="section">
 
-<div class="container">
+        <h2>Wedding Events 💍</h2>
 
-<div class="hero-content">
+        <div class="events-container">
 
-<div class="hero-left">
+            <div class="event-card">
 
-<h2>Protect Your Digital Business</h2>
+                <h3>💛 Haldi Ceremony</h3>
 
-<p>
+                <p>
+                    Date: 18 December 2026
+                </p>
 
-Welcome to the Seqrite Demo Website.
+                <p>
+                    Time: 10:00 AM
+                </p>
 
-This demo portal showcases enterprise cybersecurity,
-privacy protection, endpoint security,
-and modern web technologies.
+                <p>
+                    Venue: Wedding Home
+                </p>
 
-It is designed to provide a professional website
-experience while enabling testing of cookie discovery,
-consent management, and browser compatibility.
+            </div>
 
-</p>
 
-<a class="btn" href="#">Explore Solutions</a>
+            <div class="event-card">
 
-</div>
+                <h3>🌸 Mehendi Ceremony</h3>
 
-<div class="hero-right">
+                <p>
+                    Date: 19 December 2026
+                </p>
 
-<img loading="lazy" src="https://www.quickheal.co.in/knowledge-centre/wp-content/uploads/sites/4/2026/06/Quick-Heal-Blogs-08-1-scaled.jpg" alt="Synthetic Identity Fraud: The Fastest Growing Financial Crime" onerror="this.src='https://www.quickheal.co.in/static/version1782407041/frontend/quickheal/in/en_US/Quickheal_BlogFeed/images/default-blog.jpg'">
-</div>
+                <p>
+                    Time: 5:00 PM
+                </p>
 
-</div>
+                <p>
+                    Venue: Wedding Venue
+                </p>
 
-</div>
+            </div>
 
-</section>
 
-<section class="section">
+            <div class="event-card">
 
-<div class="container">
+                <h3>💍 Wedding Ceremony</h3>
 
-<h2 class="section-title">
+                <p>
+                    Date: 20 December 2026
+                </p>
 
-About Our Platform
+                <p>
+                    Time: 11:30 AM
+                </p>
 
-</h2>
+                <p>
+                    Venue: Wedding Hall
+                </p>
 
-<p class="section-subtitle">
+            </div>
 
-Our enterprise platform helps organizations improve cybersecurity,
-protect business data, enhance endpoint visibility,
-and strengthen compliance using intelligent security technologies.
 
-</p>
+            <div class="event-card">
 
-<div class="about">
+                <h3>🥂 Reception</h3>
 
-<img loading="lazy" src="https://www.quickheal.co.in/knowledge-centre/wp-content/uploads/sites/4/2026/06/Quick-Heal-Blogs-07-scaled.jpg" alt="Prompt Injection Attacks: How AI Tools Can Be Manipulated" onerror="this.src='https://www.quickheal.co.in/static/version1782407041/frontend/quickheal/in/en_US/Quickheal_BlogFeed/images/default-blog.jpg'">
+                <p>
+                    Date: 20 December 2026
+                </p>
 
-<div class="about-content">
+                <p>
+                    Time: 7:00 PM
+                </p>
 
-<h2>Enterprise Security Platform</h2>
+                <p>
+                    Venue: Reception Hall
+                </p>
 
-<p>
+            </div>
 
-Our solutions are built to help organizations safeguard
-critical assets against evolving cyber threats,
-improve operational resilience,
-and simplify security management.
+        </div>
 
-</p>
+    </section>
 
-<p>
 
-From endpoint protection and data privacy
-to centralized monitoring and compliance,
-our platform provides businesses with the tools
-required to build a secure digital environment.
+    <!-- Gallery -->
+    <section id="gallery" class="section">
 
-</p>
+        <h2>Our Memories 📸</h2>
 
-</div>
+        <div class="gallery">
 
-</div>
+            <img src="images/couple.jpg" alt="Sayali and Pranav">
 
-</div>
+            <img src="images/family.jpg" alt="Family">
 
-</section>
+            <img src="images/wedding.jpg" alt="Wedding">
 
-<section class="section">
+        </div>
 
-<div class="container">
+    </section>
 
-<h2 class="section-title">
 
-Featured Solutions
+    <!-- RSVP -->
+    <section id="rsvp" class="section">
 
-</h2>
+        <h2>Join Us ❤️</h2>
 
-<div class="cards">
+        <p>
+            Your presence will make our special day even more beautiful.
+        </p>
 
-<div class="card">
+        <form>
 
-<img width="626" height="436" src="https://www.seqrite.com/wp-content/themes/seqrite/images/mockup-epp.svg" alt="EPP Dashboard Mockup" class="product-img entered lazyloaded" data-lazy-src="https://www.seqrite.com/wp-content/themes/seqrite/images/mockup-epp.svg" data-ll-status="loaded">
+            <input
+                type="text"
+                placeholder="Your Name"
+                required
+            >
 
-<h3>Endpoint Protection</h3>
+            <input
+                type="number"
+                placeholder="Number of Guests"
+                required
+            >
 
-<p>
+            <select required>
 
-Protect desktops, laptops and servers against malware,
-ransomware and advanced cyber threats.
+                <option value="">
+                    Will you attend?
+                </option>
 
-</p>
+                <option value="yes">
+                    Yes, I'll be there ❤️
+                </option>
 
-</div>
+                <option value="no">
+                    Sorry, I can't attend
+                </option>
 
-<div class="card">
+            </select>
 
-<img width="750" height="351" src="https://www.seqrite.com/wp-content/uploads/2026/05/2-9-768x359.png" class="attachment-medium_large size-medium_large wp-post-image entered lazyloaded" alt="" decoding="async" data-lazy-srcset="https://www.seqrite.com/wp-content/uploads/2026/05/2-9-768x359.png 768w, https://www.seqrite.com/wp-content/uploads/2026/05/2-9-600x281.png 600w, https://www.seqrite.com/wp-content/uploads/2026/05/2-9.png 770w" data-lazy-sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:46.75%;max-width:770px;" data-lazy-src="https://www.seqrite.com/wp-content/uploads/2026/05/2-9-768x359.png" data-ll-status="loaded" sizes="(max-width: 750px) 100vw, 750px" srcset="https://www.seqrite.com/wp-content/uploads/2026/05/2-9-768x359.png 768w, https://www.seqrite.com/wp-content/uploads/2026/05/2-9-600x281.png 600w, https://www.seqrite.com/wp-content/uploads/2026/05/2-9.png 770w">
+            <button type="submit">
+                Confirm RSVP
+            </button>
 
-<h3>Data Privacy</h3>
+        </form>
 
-<p>
+    </section>
 
-Safeguard sensitive business information
-using intelligent privacy controls.
 
-</p>
+    <!-- Footer -->
+    <footer>
 
-</div>
+        <h2>Sayali ❤️ Pranav</h2>
 
-<div class="card">
+        <p>
+            Together Forever
+        </p>
 
-<img width="750" height="351" src="https://www.seqrite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-18-2026-05_16_15-PM-770x360-1-768x359.png" class="attachment-medium_large size-medium_large wp-post-image entered lazyloaded" alt="" decoding="async" data-lazy-srcset="https://www.seqrite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-18-2026-05_16_15-PM-770x360-1-768x359.png 768w, https://www.seqrite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-18-2026-05_16_15-PM-770x360-1-600x281.png 600w, https://www.seqrite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-18-2026-05_16_15-PM-770x360-1.png 770w" data-lazy-sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:46.75%;max-width:770px;" data-lazy-src="https://www.seqrite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-18-2026-05_16_15-PM-770x360-1-768x359.png" data-ll-status="loaded" sizes="(max-width: 750px) 100vw, 750px" srcset="https://www.seqrite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-18-2026-05_16_15-PM-770x360-1-768x359.png 768w, https://www.seqrite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-18-2026-05_16_15-PM-770x360-1-600x281.png 600w, https://www.seqrite.com/wp-content/uploads/2026/05/ChatGPT-Image-May-18-2026-05_16_15-PM-770x360-1.png 770w">
-<h3>Threat Detection</h3>
+        <p>
+            © 2026 Sayali & Pranav Wedding
+        </p>
 
-<p>
+    </footer>
 
-Identify suspicious activities through
-continuous monitoring and proactive response.
 
-</p>
+    <script src="script.js"></script>
 
-</div>
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= Products ================= -->
-
-<section class="section" style="background:#ffffff;">
-
-<div class="container">
-
-<h2 class="section-title">
-
-Enterprise Solutions
-
-</h2>
-
-<p class="section-subtitle">
-
-Our comprehensive security portfolio helps organizations protect
-their digital infrastructure, sensitive information, users,
-and cloud environments through intelligent security solutions.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<img width="750" height="351" src="https://www.seqrite.com/wp-content/uploads/2026/05/12-768x359.png" class="attachment-medium_large size-medium_large wp-post-image entered lazyloaded" alt="" decoding="async" fetchpriority="high" data-lazy-srcset="https://www.seqrite.com/wp-content/uploads/2026/05/12-768x359.png 768w, https://www.seqrite.com/wp-content/uploads/2026/05/12-600x281.png 600w, https://www.seqrite.com/wp-content/uploads/2026/05/12.png 770w" data-lazy-sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:46.75%;max-width:770px;" data-lazy-src="https://www.seqrite.com/wp-content/uploads/2026/05/12-768x359.png" data-ll-status="loaded" sizes="(max-width: 750px) 100vw, 750px" srcset="https://www.seqrite.com/wp-content/uploads/2026/05/12-768x359.png 768w, https://www.seqrite.com/wp-content/uploads/2026/05/12-600x281.png 600w, https://www.seqrite.com/wp-content/uploads/2026/05/12.png 770w">
-
-<h3>Endpoint Security</h3>
-
-<p>
-
-Real-time protection against ransomware, malware,
-phishing attacks and zero-day threats across enterprise devices.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://www.quickheal.co.in/static/version1782407041/frontend/quickheal/in/en_US/Quickheal_BlogFeed/images/default-blog.jpg" alt="Reddit Hacked? What to Do If Your Account Is Compromised" onerror="this.src='https://www.quickheal.co.in/static/version1782407041/frontend/quickheal/in/en_US/Quickheal_BlogFeed/images/default-blog.jpg'">
-
-<h3>Email Security</h3>
-
-<p>
-
-Protect corporate email communication from phishing,
-spam, malicious attachments and business email compromise.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=43">
-
-<h3>Data Protection</h3>
-
-<p>
-
-Protect confidential business information with
-advanced encryption, access control and monitoring.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=44">
-
-<h3>Cloud Security</h3>
-
-<p>
-
-Secure cloud workloads, virtual machines and
-cloud applications through centralized management.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=45">
-
-<h3>Mobile Security</h3>
-
-<p>
-
-Manage and secure smartphones and tablets
-using enterprise mobility management.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=46">
-
-<h3>Compliance</h3>
-
-<p>
-
-Improve governance through centralized
-reporting, auditing and security monitoring.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= Why Choose Us ================= -->
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">
-
-Why Choose Our Platform
-
-</h2>
-
-<p class="section-subtitle">
-
-Designed for enterprises looking for scalability,
-performance and comprehensive cybersecurity.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=51">
-
-<h3>Centralized Dashboard</h3>
-
-<p>
-
-Manage all endpoints, users and policies
-from one easy-to-use console.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=52">
-
-<h3>AI Powered Detection</h3>
-
-<p>
-
-Leverage intelligent threat analytics
-to identify suspicious activities quickly.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=53">
-
-<h3>24×7 Monitoring</h3>
-
-<p>
-
-Continuous monitoring helps minimize
-security risks and improve response time.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= Statistics ================= -->
-
-<section
-style="
-background:#D71920;
-color:white;
-padding:70px 0;
-">
-
-<div class="container">
-
-<div
-style="
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
-text-align:center;
-">
-
-<div>
-
-<h2 style="font-size:48px;">1000+</h2>
-
-<p>Enterprise Customers</p>
-
-</div>
-
-<div>
-
-<h2 style="font-size:48px;">10M+</h2>
-
-<p>Protected Endpoints</p>
-
-</div>
-
-<div>
-
-<h2 style="font-size:48px;">99.9%</h2>
-
-<p>Platform Availability</p>
-
-</div>
-
-<div>
-
-<h2 style="font-size:48px;">24×7</h2>
-
-<p>Security Monitoring</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= Business Benefits ================= -->
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">
-
-Business Benefits
-
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=61">
-
-<h3>Reduced Risk</h3>
-
-<p>
-
-Strengthen cyber resilience by reducing
-attack surfaces across the organization.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=62">
-
-<h3>Operational Efficiency</h3>
-
-<p>
-
-Automate routine security operations and
-improve productivity with centralized visibility.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=63">
-
-<h3>Improved Compliance</h3>
-
-<p>
-
-Support regulatory compliance with
-detailed reporting and audit readiness.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= Cookie Information ================= -->
-
-<section class="section"
-style="background:#ffffff;">
-
-<div class="container">
-
-<h2 class="section-title">
-
-Website Features
-
-</h2>
-
-<p class="section-subtitle">
-
-This demonstration website includes several common enterprise
-website capabilities to provide a realistic browsing experience.
-The page also creates browser cookies in the background for
-functional testing and validation without affecting the visual
-experience of the site.
-
-</p>
-<!-- ================= Cookie Categories ================= -->
-
-<p class="success">
-
-✔ Cookies are generated automatically when the page loads.
-
-</p>
-
-<table>
-
-<tr>
-
-<th>Category</th>
-
-<th>Generated Cookies</th>
-
-</tr>
-
-<tr>
-
-<td>Necessary</td>
-
-<td>
-
-PHPSESSID,
-JSESSIONID,
-cookie_consent,
-XSRF-TOKEN,
-session_id
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Marketing</td>
-
-<td>
-
-_fbp,
-IDE,
-fr,
-test_cookie,
-ads_campaign
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Analytics</td>
-
-<td>
-
-_ga,
-_gid,
-_gat,
-analytics_session,
-visitor_id
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Functional</td>
-
-<td>
-
-language,
-timezone,
-currency,
-theme,
-chat_widget
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Security</td>
-
-<td>
-
-csrf_token,
-auth_token,
-secure_login,
-device_id,
-secure_session
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Personalization</td>
-
-<td>
-
-recent_view,
-recommended_items,
-user_preferences,
-preferred_category,
-ui_layout
-
-</td>
-
-</tr>
-
-</table>
-
-</div>
-
-</section>
-
-<!-- ================= Customer Success ================= -->
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">
-
-Customer Success
-
-</h2>
-
-<p class="section-subtitle">
-
-Organizations across industries rely on modern cybersecurity
-solutions to protect digital assets, improve operational resilience,
-and strengthen their security posture against evolving cyber threats.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=71">
-
-<h3>Financial Services</h3>
-
-<p>
-
-Protect customer information,
-online banking systems,
-and sensitive financial transactions.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=72">
-
-<h3>Healthcare</h3>
-
-<p>
-
-Secure patient information,
-medical devices,
-and healthcare infrastructure.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250?random=73">
-
-<h3>Manufacturing</h3>
-
-<p>
-
-Safeguard production environments,
-industrial systems,
-and operational technology.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= Contact ================= -->
-
-<section
-style="
-background:#ffffff;
-padding:80px 0;
-">
-
-<div class="container">
-
-<h2 class="section-title">
-
-Contact Us
-
-</h2>
-
-<div
-style="
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:40px;
-margin-top:50px;
-">
-
-<div>
-
-<h3 style="color:#D71920;margin-bottom:20px;">
-
-Corporate Office
-
-</h3>
-
-<p>
-
-📍 Pune, Maharashtra, India
-
-</p>
-
-<br>
-
-<p>
-
-📧 info@example.com
-
-</p>
-
-<br>
-
-<p>
-
-☎ +91-20-1234-5678
-
-</p>
-
-</div>
-
-<div>
-
-<h3 style="color:#D71920;margin-bottom:20px;">
-
-Business Hours
-
-</h3>
-
-<p>
-
-Monday - Friday
-
-</p>
-
-<p>
-
-09:00 AM - 06:00 PM
-
-</p>
-
-<br>
-
-<p>
-
-Saturday
-
-</p>
-
-<p>
-
-09:00 AM - 01:00 PM
-
-</p>
-
-</div>
-
-<div>
-
-<h3 style="color:#D71920;margin-bottom:20px;">
-
-Quick Links
-
-</h3>
-
-<p>Products</p>
-
-<p>Solutions</p>
-
-<p>Support</p>
-
-<p>Downloads</p>
-
-<p>Privacy Policy</p>
-
-<p>Cookie Policy</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= Newsletter ================= -->
-
-<section
-style="
-background:#D71920;
-color:white;
-padding:70px 0;
-text-align:center;
-">
-
-<div class="container">
-
-<h2>
-
-Stay Updated
-
-</h2>
-
-<p
-style="
-margin-top:20px;
-font-size:18px;
-">
-
-Subscribe to receive the latest updates
-on cybersecurity trends,
-enterprise protection,
-and product innovations.
-
-</p>
-
-<br>
-
-<input
-type="email"
-placeholder="Enter your email"
-style="
-padding:15px;
-width:320px;
-max-width:90%;
-border:none;
-border-radius:30px;
-margin-right:10px;
-">
-
-<button
-style="
-padding:15px 35px;
-background:white;
-color:#D71920;
-border:none;
-border-radius:30px;
-font-weight:bold;
-cursor:pointer;
-">
-
-Subscribe
-
-</button>
-
-</div>
-
-</section>
-
-<!-- ================= Footer ================= -->
-
-<footer
-style="
-background:#222;
-color:white;
-padding:50px 0;
-text-align:center;
-">
-
-<div class="container">
-
-<h2>
-
-Seqrite Demo Website
-
-</h2>
-
-<p
-style="
-margin-top:20px;
-line-height:1.8;
-">
-
-Enterprise Cybersecurity • Endpoint Protection • Data Privacy
-
-</p>
-
-<p
-style="
-margin-top:20px;
-font-size:14px;
-color:#cccccc;
-">
-
-© 2026 Seqrite Demo Website.
-All Rights Reserved.
-
-</p>
-
-</div>
-<script>
-function createCookie(name, value, days) {
-  var d = new Date();
-  d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
-  document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/";
-}
-</script>
-
-<script type="text/plain" data-type="application/javascript" data-name="others"> 
-createCookie("cookie_consent", "accepted", 365);
-createCookie("session_id", "SID123456789", 30);
-createCookie("csrf_token", "csrf987654", 30);
-createCookie("ads_campaign", "summer_sale", 90);
-createCookie("ads_click_id", "AD123456789", 90);
-createCookie("analytics_session", "SESSION123", 30);
-createCookie("secure_login", "true", 30);
-createCookie("language", "en", 365);
-createCookie("currency", "INR", 365);
-createCookie("theme", "dark", 365);
-createCookie("chat_widget", "enabled", 365);
-createCookie("user_preference", "dark", 30);
-createCookie("recent_view", "Laptop", 365);
-createCookie("recommended_items", "Mobiles", 365);
-createCookie("user_preferences", "DarkMode", 365);
-createCookie("preferred_category", "Electronics", 365);
-createCookie("ui_layout", "Grid", 365);     
-</script>
-
-<script type="text/plain" data-type="application/javascript" data-name="security">
-createCookie("XSRF-TOKEN", "xsrf987654", 30);     
-</script>
-     
-<script type="text/plain" data-type="application/javascript" data-name="marketing">
-createCookie("_fbp", "fb.1.123456789", 90);
-createCookie("visitor_id", "VIS987654", 365);     
-createCookie("_fbc", "facebook_cookie", 90);
-createCookie("IDE", "google_ads", 90);
-createCookie("fr", "facebook_cookie", 90);
-document.cookie = '_uetvid=uet-vid-'  + Math.random().toString(36).slice(2) + '; path=/; max-age=15552000';
-document.cookie = '_uetsid=uet-sess-' + Math.random().toString(36).slice(2) + '; path=/; max-age=1800';     
-document.cookie = 'MUID=MUID-' + Math.random().toString(36).slice(2).toUpperCase() + '; path=/; max-age=31536000';
-createCookie("auth_token", "auth123456", 30);
-createCookie("_gcl_au", "1.1.987654321.1706500000", 90); 
-</script>
- 
-<script type="text/plain" data-type="application/javascript" data-name="analytics">
-createCookie("_ga", "GA1.2.987654321", 730);
-createCookie("_gid", "GA1.2.123456789", 1);
-createCookie("_gat", "1", 1);
-</script>
- 
-<script type="text/plain" data-type="application/javascript" data-name="functional">
-createCookie("test_cookie", "doubleclick", 30);     
-createCookie("PHPSESSID", "A12345BCDE", 30);
-createCookie("JSESSIONID", "JSESSION99887", 30);   
-</script>
- 
-<script type="text/plain" data-type="application/javascript" data-name="personalization">
-createCookie("timezone", "Asia/Kolkata", 365);
-</script>
-
-<!-- Cookie Consent Launcher  -->
-<link rel="stylesheet" href="https://xyztech.pre-dataprivacy.com/cmapi/dynamic/v1/config/css/6a8d3cfa4707f54111c8e879"/>
-<script type="application/javascript" src="https://xyztech.pre-dataprivacy.com/cmapi/dynamic/v1/config/js/6a8d3cfa4707f54111c8e879"></script>
-
-<!-- Cookie Preference Centre Launcher -->
-<button type="button" class="pc-preference-btn" style="display:none;" onclick="PrivacyConsent.openPreferenceCentre()">
-  Manage Cookie Preferences
-</button>
-  
 </body>
 </html>
